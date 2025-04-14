@@ -8,24 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		C1341C9F2DA93E53004BA3DB /* SimpleDistributedOrderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341C9E2DA93E53004BA3DB /* SimpleDistributedOrderApp.swift */; };
-		C1341CA12DA93E53004BA3DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CA02DA93E53004BA3DB /* ContentView.swift */; };
-		C1341CA32DA93E53004BA3DB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CA22DA93E53004BA3DB /* Item.swift */; };
 		C1341CA52DA93E56004BA3DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1341CA42DA93E56004BA3DB /* Assets.xcassets */; };
 		C1341CA82DA93E56004BA3DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1341CA72DA93E56004BA3DB /* Preview Assets.xcassets */; };
 		C1341CB22DA93E56004BA3DB /* SimpleDistributedOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CB12DA93E56004BA3DB /* SimpleDistributedOrderTests.swift */; };
-		C1341CBC2DA93E56004BA3DB /* SimpleDistributedOrderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CBB2DA93E56004BA3DB /* SimpleDistributedOrderUITests.swift */; };
-		C1341CBE2DA93E56004BA3DB /* SimpleDistributedOrderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CBD2DA93E56004BA3DB /* SimpleDistributedOrderUITestsLaunchTests.swift */; };
+		C1341CCF2DA93F01004BA3DB /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CCE2DA93F01004BA3DB /* ProductItem.swift */; };
+		C1341CD12DA940A5004BA3DB /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CD02DA940A5004BA3DB /* ProductItemView.swift */; };
+		C1341CD32DA94324004BA3DB /* ProductItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CD22DA94324004BA3DB /* ProductItemViewModel.swift */; };
+		C1341CD62DA95799004BA3DB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CD52DA95799004BA3DB /* Extensions.swift */; };
+		C1341CD82DAAC85F004BA3DB /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CD72DAAC85F004BA3DB /* ProductListView.swift */; };
+		C1341CDA2DAAC8B8004BA3DB /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CD92DAAC8B8004BA3DB /* ProductListViewModel.swift */; };
+		C1341CDC2DAAC95D004BA3DB /* ProductSwiftDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CDB2DAAC95D004BA3DB /* ProductSwiftDataService.swift */; };
+		C1341CDF2DAADC11004BA3DB /* ProductItems.json in Resources */ = {isa = PBXBuildFile; fileRef = C1341CDE2DAADC11004BA3DB /* ProductItems.json */; };
+		C1341CE12DAAF14A004BA3DB /* ProductsPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CE02DAAF14A004BA3DB /* ProductsPackage.swift */; };
+		C1341CE32DAAF8B7004BA3DB /* ProductPackageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CE22DAAF8B7004BA3DB /* ProductPackageView.swift */; };
+		C1341CE52DAAFA86004BA3DB /* ProductPackageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CE42DAAFA86004BA3DB /* ProductPackageViewModel.swift */; };
+		C1341CE82DAB86AF004BA3DB /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = C1341CE72DAB86AF004BA3DB /* Nimble */; };
+		C1341CEE2DAB888E004BA3DB /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = C1341CED2DAB888E004BA3DB /* Quick */; };
+		C1341CF12DAB88B7004BA3DB /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = C1341CF02DAB88B7004BA3DB /* Mockingbird */; };
+		C1341CF42DAC3432004BA3DB /* SimpleDistributedOrderMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CF32DAC3432004BA3DB /* SimpleDistributedOrderMocks.generated.swift */; };
+		C1341CF82DAC34E4004BA3DB /* ProductItemViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CF72DAC34E4004BA3DB /* ProductItemViewModelTests.swift */; };
+		C1341CFA2DAC490B004BA3DB /* ProductPackageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CF92DAC490B004BA3DB /* ProductPackageViewModelTests.swift */; };
+		C1341CFC2DAC4C79004BA3DB /* ProductListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1341CFB2DAC4C79004BA3DB /* ProductListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		C1341CAE2DA93E56004BA3DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C1341C932DA93E53004BA3DB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C1341C9A2DA93E53004BA3DB;
-			remoteInfo = SimpleDistributedOrder;
-		};
-		C1341CB82DA93E56004BA3DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C1341C932DA93E53004BA3DB /* Project object */;
 			proxyType = 1;
@@ -37,15 +44,25 @@
 /* Begin PBXFileReference section */
 		C1341C9B2DA93E53004BA3DB /* SimpleDistributedOrder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDistributedOrder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1341C9E2DA93E53004BA3DB /* SimpleDistributedOrderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDistributedOrderApp.swift; sourceTree = "<group>"; };
-		C1341CA02DA93E53004BA3DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C1341CA22DA93E53004BA3DB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C1341CA42DA93E56004BA3DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1341CA72DA93E56004BA3DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1341CAD2DA93E56004BA3DB /* SimpleDistributedOrderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleDistributedOrderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1341CB12DA93E56004BA3DB /* SimpleDistributedOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDistributedOrderTests.swift; sourceTree = "<group>"; };
-		C1341CB72DA93E56004BA3DB /* SimpleDistributedOrderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleDistributedOrderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1341CBB2DA93E56004BA3DB /* SimpleDistributedOrderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDistributedOrderUITests.swift; sourceTree = "<group>"; };
-		C1341CBD2DA93E56004BA3DB /* SimpleDistributedOrderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDistributedOrderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C1341CCE2DA93F01004BA3DB /* ProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
+		C1341CD02DA940A5004BA3DB /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
+		C1341CD22DA94324004BA3DB /* ProductItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemViewModel.swift; sourceTree = "<group>"; };
+		C1341CD52DA95799004BA3DB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C1341CD72DAAC85F004BA3DB /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		C1341CD92DAAC8B8004BA3DB /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		C1341CDB2DAAC95D004BA3DB /* ProductSwiftDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSwiftDataService.swift; sourceTree = "<group>"; };
+		C1341CDE2DAADC11004BA3DB /* ProductItems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ProductItems.json; sourceTree = "<group>"; };
+		C1341CE02DAAF14A004BA3DB /* ProductsPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPackage.swift; sourceTree = "<group>"; };
+		C1341CE22DAAF8B7004BA3DB /* ProductPackageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPackageView.swift; sourceTree = "<group>"; };
+		C1341CE42DAAFA86004BA3DB /* ProductPackageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPackageViewModel.swift; sourceTree = "<group>"; };
+		C1341CF32DAC3432004BA3DB /* SimpleDistributedOrderMocks.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleDistributedOrderMocks.generated.swift; sourceTree = "<group>"; };
+		C1341CF72DAC34E4004BA3DB /* ProductItemViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemViewModelTests.swift; sourceTree = "<group>"; };
+		C1341CF92DAC490B004BA3DB /* ProductPackageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPackageViewModelTests.swift; sourceTree = "<group>"; };
+		C1341CFB2DAC4C79004BA3DB /* ProductListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C1341CB42DA93E56004BA3DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C1341CEE2DAB888E004BA3DB /* Quick in Frameworks */,
+				C1341CE82DAB86AF004BA3DB /* Nimble in Frameworks */,
+				C1341CF12DAB88B7004BA3DB /* Mockingbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +91,8 @@
 			children = (
 				C1341C9D2DA93E53004BA3DB /* SimpleDistributedOrder */,
 				C1341CB02DA93E56004BA3DB /* SimpleDistributedOrderTests */,
-				C1341CBA2DA93E56004BA3DB /* SimpleDistributedOrderUITests */,
 				C1341C9C2DA93E53004BA3DB /* Products */,
+				C1341CEC2DAB888E004BA3DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,7 +101,6 @@
 			children = (
 				C1341C9B2DA93E53004BA3DB /* SimpleDistributedOrder.app */,
 				C1341CAD2DA93E56004BA3DB /* SimpleDistributedOrderTests.xctest */,
-				C1341CB72DA93E56004BA3DB /* SimpleDistributedOrderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,9 +108,10 @@
 		C1341C9D2DA93E53004BA3DB /* SimpleDistributedOrder */ = {
 			isa = PBXGroup;
 			children = (
+				C1341CDD2DAADBF5004BA3DB /* Data */,
+				C1341CD42DA9576B004BA3DB /* Utils */,
+				C1341CCA2DA93E76004BA3DB /* Home */,
 				C1341C9E2DA93E53004BA3DB /* SimpleDistributedOrderApp.swift */,
-				C1341CA02DA93E53004BA3DB /* ContentView.swift */,
-				C1341CA22DA93E53004BA3DB /* Item.swift */,
 				C1341CA42DA93E56004BA3DB /* Assets.xcassets */,
 				C1341CA62DA93E56004BA3DB /* Preview Content */,
 			);
@@ -116,18 +129,108 @@
 		C1341CB02DA93E56004BA3DB /* SimpleDistributedOrderTests */ = {
 			isa = PBXGroup;
 			children = (
+				C1341CF52DAC3460004BA3DB /* Home */,
+				C1341CF22DAC3432004BA3DB /* MockingbirdMocks */,
 				C1341CB12DA93E56004BA3DB /* SimpleDistributedOrderTests.swift */,
 			);
 			path = SimpleDistributedOrderTests;
 			sourceTree = "<group>";
 		};
-		C1341CBA2DA93E56004BA3DB /* SimpleDistributedOrderUITests */ = {
+		C1341CCA2DA93E76004BA3DB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C1341CBB2DA93E56004BA3DB /* SimpleDistributedOrderUITests.swift */,
-				C1341CBD2DA93E56004BA3DB /* SimpleDistributedOrderUITestsLaunchTests.swift */,
+				C1341CCB2DA93E90004BA3DB /* Model */,
+				C1341CCC2DA93E9B004BA3DB /* View */,
+				C1341CCD2DA93EA5004BA3DB /* ViewModel */,
 			);
-			path = SimpleDistributedOrderUITests;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C1341CCB2DA93E90004BA3DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1341CCE2DA93F01004BA3DB /* ProductItem.swift */,
+				C1341CE02DAAF14A004BA3DB /* ProductsPackage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1341CCC2DA93E9B004BA3DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1341CD02DA940A5004BA3DB /* ProductItemView.swift */,
+				C1341CD72DAAC85F004BA3DB /* ProductListView.swift */,
+				C1341CE22DAAF8B7004BA3DB /* ProductPackageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1341CCD2DA93EA5004BA3DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1341CD22DA94324004BA3DB /* ProductItemViewModel.swift */,
+				C1341CD92DAAC8B8004BA3DB /* ProductListViewModel.swift */,
+				C1341CE42DAAFA86004BA3DB /* ProductPackageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1341CD42DA9576B004BA3DB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C1341CD52DA95799004BA3DB /* Extensions.swift */,
+				C1341CDB2DAAC95D004BA3DB /* ProductSwiftDataService.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C1341CDD2DAADBF5004BA3DB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C1341CFD2DAD28B0004BA3DB /* Local */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C1341CEC2DAB888E004BA3DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1341CF22DAC3432004BA3DB /* MockingbirdMocks */ = {
+			isa = PBXGroup;
+			children = (
+				C1341CF32DAC3432004BA3DB /* SimpleDistributedOrderMocks.generated.swift */,
+			);
+			path = MockingbirdMocks;
+			sourceTree = "<group>";
+		};
+		C1341CF52DAC3460004BA3DB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C1341CF62DAC3470004BA3DB /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C1341CF62DAC3470004BA3DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1341CF72DAC34E4004BA3DB /* ProductItemViewModelTests.swift */,
+				C1341CF92DAC490B004BA3DB /* ProductPackageViewModelTests.swift */,
+				C1341CFB2DAC4C79004BA3DB /* ProductListViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1341CFD2DAD28B0004BA3DB /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				C1341CDE2DAADC11004BA3DB /* ProductItems.json */,
+			);
+			path = Local;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,27 +267,14 @@
 				C1341CAF2DA93E56004BA3DB /* PBXTargetDependency */,
 			);
 			name = SimpleDistributedOrderTests;
+			packageProductDependencies = (
+				C1341CE72DAB86AF004BA3DB /* Nimble */,
+				C1341CED2DAB888E004BA3DB /* Quick */,
+				C1341CF02DAB88B7004BA3DB /* Mockingbird */,
+			);
 			productName = SimpleDistributedOrderTests;
 			productReference = C1341CAD2DA93E56004BA3DB /* SimpleDistributedOrderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C1341CB62DA93E56004BA3DB /* SimpleDistributedOrderUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C1341CC72DA93E56004BA3DB /* Build configuration list for PBXNativeTarget "SimpleDistributedOrderUITests" */;
-			buildPhases = (
-				C1341CB32DA93E56004BA3DB /* Sources */,
-				C1341CB42DA93E56004BA3DB /* Frameworks */,
-				C1341CB52DA93E56004BA3DB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C1341CB92DA93E56004BA3DB /* PBXTargetDependency */,
-			);
-			name = SimpleDistributedOrderUITests;
-			productName = SimpleDistributedOrderUITests;
-			productReference = C1341CB72DA93E56004BA3DB /* SimpleDistributedOrderUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -203,10 +293,6 @@
 						CreatedOnToolsVersion = 15.1;
 						TestTargetID = C1341C9A2DA93E53004BA3DB;
 					};
-					C1341CB62DA93E56004BA3DB = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = C1341C9A2DA93E53004BA3DB;
-					};
 				};
 			};
 			buildConfigurationList = C1341C962DA93E53004BA3DB /* Build configuration list for PBXProject "SimpleDistributedOrder" */;
@@ -218,13 +304,17 @@
 				Base,
 			);
 			mainGroup = C1341C922DA93E53004BA3DB;
+			packageReferences = (
+				C1341CE62DAB86AF004BA3DB /* XCRemoteSwiftPackageReference "Nimble" */,
+				C1341CE92DAB8711004BA3DB /* XCRemoteSwiftPackageReference "Quick" */,
+				C1341CEF2DAB88B7004BA3DB /* XCRemoteSwiftPackageReference "mockingbird" */,
+			);
 			productRefGroup = C1341C9C2DA93E53004BA3DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C1341C9A2DA93E53004BA3DB /* SimpleDistributedOrder */,
 				C1341CAC2DA93E56004BA3DB /* SimpleDistributedOrderTests */,
-				C1341CB62DA93E56004BA3DB /* SimpleDistributedOrderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,19 +324,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1341CDF2DAADC11004BA3DB /* ProductItems.json in Resources */,
 				C1341CA82DA93E56004BA3DB /* Preview Assets.xcassets in Resources */,
 				C1341CA52DA93E56004BA3DB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C1341CAB2DA93E56004BA3DB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C1341CB52DA93E56004BA3DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,9 +344,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1341CA12DA93E53004BA3DB /* ContentView.swift in Sources */,
-				C1341CA32DA93E53004BA3DB /* Item.swift in Sources */,
+				C1341CD82DAAC85F004BA3DB /* ProductListView.swift in Sources */,
+				C1341CD12DA940A5004BA3DB /* ProductItemView.swift in Sources */,
+				C1341CCF2DA93F01004BA3DB /* ProductItem.swift in Sources */,
+				C1341CE12DAAF14A004BA3DB /* ProductsPackage.swift in Sources */,
+				C1341CDA2DAAC8B8004BA3DB /* ProductListViewModel.swift in Sources */,
+				C1341CE32DAAF8B7004BA3DB /* ProductPackageView.swift in Sources */,
 				C1341C9F2DA93E53004BA3DB /* SimpleDistributedOrderApp.swift in Sources */,
+				C1341CD32DA94324004BA3DB /* ProductItemViewModel.swift in Sources */,
+				C1341CE52DAAFA86004BA3DB /* ProductPackageViewModel.swift in Sources */,
+				C1341CD62DA95799004BA3DB /* Extensions.swift in Sources */,
+				C1341CDC2DAAC95D004BA3DB /* ProductSwiftDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,15 +363,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1341CB22DA93E56004BA3DB /* SimpleDistributedOrderTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C1341CB32DA93E56004BA3DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C1341CBC2DA93E56004BA3DB /* SimpleDistributedOrderUITests.swift in Sources */,
-				C1341CBE2DA93E56004BA3DB /* SimpleDistributedOrderUITestsLaunchTests.swift in Sources */,
+				C1341CFA2DAC490B004BA3DB /* ProductPackageViewModelTests.swift in Sources */,
+				C1341CF42DAC3432004BA3DB /* SimpleDistributedOrderMocks.generated.swift in Sources */,
+				C1341CF82DAC34E4004BA3DB /* ProductItemViewModelTests.swift in Sources */,
+				C1341CFC2DAC4C79004BA3DB /* ProductListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,11 +377,6 @@
 			isa = PBXTargetDependency;
 			target = C1341C9A2DA93E53004BA3DB /* SimpleDistributedOrder */;
 			targetProxy = C1341CAE2DA93E56004BA3DB /* PBXContainerItemProxy */;
-		};
-		C1341CB92DA93E56004BA3DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C1341C9A2DA93E53004BA3DB /* SimpleDistributedOrder */;
-			targetProxy = C1341CB82DA93E56004BA3DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -512,40 +594,6 @@
 			};
 			name = Release;
 		};
-		C1341CC82DA93E56004BA3DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.alwi.SimpleDistributedOrderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SimpleDistributedOrder;
-			};
-			name = Debug;
-		};
-		C1341CC92DA93E56004BA3DB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.alwi.SimpleDistributedOrderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SimpleDistributedOrder;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -576,16 +624,52 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C1341CC72DA93E56004BA3DB /* Build configuration list for PBXNativeTarget "SimpleDistributedOrderUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C1341CC82DA93E56004BA3DB /* Debug */,
-				C1341CC92DA93E56004BA3DB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1341CE62DAB86AF004BA3DB /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = exactVersion;
+				version = 12.0.0;
+			};
+		};
+		C1341CE92DAB8711004BA3DB /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.0.0;
+			};
+		};
+		C1341CEF2DAB88B7004BA3DB /* XCRemoteSwiftPackageReference "mockingbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/birdrides/mockingbird.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1341CE72DAB86AF004BA3DB /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1341CE62DAB86AF004BA3DB /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		C1341CED2DAB888E004BA3DB /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1341CE92DAB8711004BA3DB /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		C1341CF02DAB88B7004BA3DB /* Mockingbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1341CEF2DAB88B7004BA3DB /* XCRemoteSwiftPackageReference "mockingbird" */;
+			productName = Mockingbird;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C1341C932DA93E53004BA3DB /* Project object */;
 }

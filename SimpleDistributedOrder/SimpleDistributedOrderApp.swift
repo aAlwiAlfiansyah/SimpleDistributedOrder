@@ -2,7 +2,7 @@
 //  SimpleDistributedOrderApp.swift
 //  SimpleDistributedOrder
 //
-//  Created by Alwi Alfiansyah Ramdan on 11/04/25.
+//  Created by Alwi Alfiansyah Ramdan on 13/04/25.
 //
 
 import SwiftUI
@@ -10,9 +10,11 @@ import SwiftData
 
 @main
 struct SimpleDistributedOrderApp: App {
+  @AppStorage("isFirstTimeLaunch") private var isFirstTimeLaunch: Bool = true
+  
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            ProductItem.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -24,9 +26,10 @@ struct SimpleDistributedOrderApp: App {
     }()
 
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(sharedModelContainer)
+      let datasource = ProductSwiftDataService.shared(isFirstTimeLaunch: &isFirstTimeLaunch)
+      WindowGroup {
+        ProductListView(productViewModel: ProductListViewModel(dataSource: datasource))
+      }
+      .modelContainer(sharedModelContainer)
     }
 }
