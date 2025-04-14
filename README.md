@@ -28,7 +28,7 @@ A simple SwiftUI-based app that allows users to select products, auto-package th
 ### ▶️ Run in Simulator
 1. Clone this repository
 ```bash
-git clone https://github.com/alwialfiansyah/SimpleDistributedOrder.git
+git clone https://github.com/aAlwiAlfiansyah/SimpleDistributedOrder.git
 cd SimpleDistributedOrder
 ```
 
